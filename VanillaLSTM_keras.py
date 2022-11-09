@@ -3,7 +3,7 @@ import os, logging
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 logging.getLogger("tensorflow").setLevel(logging.CRITICAL)
 logging.getLogger("tensorflow_hub").setLevel(logging.CRITICAL)
-import keras as K
+import tensorflow.keras as K
 import copy
 
 class VanillaLSTM_keras(object):
